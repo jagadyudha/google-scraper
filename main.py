@@ -1,6 +1,6 @@
 #!/usr/bin/python
 ###coded by jagad###
-####sorry if my code is bad :(###
+####sorry if my code is bad###
 ###SARANGHAEYOOO~###
 
 from bs4 import BeautifulSoup
