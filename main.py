@@ -1,7 +1,7 @@
 #!/usr/bin/python
-#coded by jagad
-#sorry my code is bad :(
-#SARANGHAEYOOO~
+###coded by jagad###
+####sorry if my code is bad :(###
+###SARANGHAEYOOO~###
 
 from bs4 import BeautifulSoup
 import urllib2
