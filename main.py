@@ -1,26 +1,42 @@
 #!/usr/bin/python
-###coded by jagad###
-####sorry if my code is bad###
-###SARANGHAEYOOO~###
+### coded by jagad ###
 
 from bs4 import BeautifulSoup
-import urllib2
+import urllib
 import requests
 
-print ("   _                       _                 _ ")
-print ("  (_) __ _  __ _  __ _  __| | __ _  __ _  __| |")
-print ("  | |/ _` |/ _` |/ _` |/ _` |/ _` |/ _` |/ _` |")
-print ("  | | (_| | (_| | (_| | (_| | (_| | (_| | (_| |")
-print (" _/ |\__,_|\__, |\__,_|\__,_|\__, |\__,_|\__,_|")
-print ("|__/       |___/             |___/             ")
-print ("")
+print("")
+print("    ###c0ded by jagad###        $$\                                       ")
+print("  ------------------------      $$ |                                      ")
+print(" $$$$$$\   $$$$$$$\ $$$$$$\   $$$$$$\    $$$$$$\   $$$$$$\  $$$$$$\$$$$\  ")
+print("$$  __$$\ $$  _____|\____$$\  \_$$  _|  $$  __$$\  \____$$\ $$  _$$  _$$\ ")
+print("$$ /  $$ |$$ /      $$$$$$$ |   $$ |    $$$$$$$$ | $$$$$$$ |$$ / $$ / $$ |")
+print("$$ |  $$ |$$ |     $$  __$$ |   $$ |$$\ $$   ____|$$  __$$ |$$ | $$ | $$ |")
+print("\$$$$$$$ |\$$$$$$$\\$$$$$$$ |$$\\$$$$  |\$$$$$$$\ \$$$$$$$ |$$ | $$ | $$ |")
+print(" \____$$ | \_______|\_______|\__|\____/  \_______| \_______|\__| \__| \__|")
+print("$$\   $$ |                                                                ")
+print("\$$$$$$  |                                                                ")
+print(" \______/                                                                 ")
+print("")
 
-dork = raw_input("Masukan Dork! : ")
-print ("")
-url_1 = "https://www.google.com/search?q=" +dork
-url_2 = requests.get(url_1)
-lol = BeautifulSoup(url_2.text, "html.parser")
+dork = raw_input("(Input Dork!) : ")
+pages_number = []
+pages_number.append(0)
 
-for i in lol.findAll('cite'):
-    print "-> ", i.text
+for pgs in range(1, 1000):
+	if pgs % 10 == 0:
+		pages_number.append(pgs)
+
 print ("")
+encoded = urllib.quote(dork)
+
+for p in pages_number:
+	pages = str(p)
+	url_1 = "https://www.google.com/search?q=" +encoded +"&start=" +pages
+	url_2 = requests.get(url_1)
+	wow = BeautifulSoup(url_2.text, "html.parser")
+	for i in wow.findAll('cite'):
+		print ("Link grabbed dude !!!")
+		output = i.text
+		myfile = open('output.txt', 'a')
+		myfile.write(output + "\n")
