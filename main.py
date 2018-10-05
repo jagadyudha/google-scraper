@@ -30,13 +30,17 @@ for pgs in range(1, 1000):
 print ("")
 encoded = urllib.quote(dork)
 
-for p in pages_number:
-	pages = str(p)
-	url_1 = "https://www.google.com/search?q=" +encoded +"&start=" +pages
-	url_2 = requests.get(url_1)
-	wow = BeautifulSoup(url_2.text, "html.parser")
-	for i in wow.findAll('cite'):
-		print ("Link grabbed dude !!!")
-		output = i.text
-		myfile = open('output.txt', 'a')
-		myfile.write(output + "\n")
+try:
+	for p in pages_number:
+		pages = str(p)
+		url_1 = "https://www.google.com/search?q=" +encoded +"&start=" +pages
+		url_2 = requests.get(url_1)
+		wow = BeautifulSoup(url_2.text, "html.parser")
+		for i in wow.findAll('cite'):
+			print ("Link grabbed dude !!!")
+			output = i.text
+			myfile = open('output.txt', 'a')
+			myfile.write(output + "\n")
+
+except:
+	print ("")
