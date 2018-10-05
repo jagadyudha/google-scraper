@@ -10,4 +10,15 @@ install BeautifulSoup
 ```
 pip install beautifulsoup
 ```
-run program (python main.py)
+Run program
+```
+python main.py
+```
+## Important
+Result is in output.txt
+
+You can change how many page you grab. 1 page = 10
+```
+#this is 100 pages
+for pgs in range(1, 1000):
+```
