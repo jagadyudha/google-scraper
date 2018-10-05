@@ -1,5 +1,13 @@
-# How to use
-if you using linux. install pip with (sudo apt-get install python-pip)
+# Google Dork [Python]
+This is tools for lazy depeser :v
 
-install BeautifulSoup (pip install beautifulsoup)
+## How to use
+Installing pip in linux. if your os is windows, you can search in google bro.
+```
+sudo apt-get install pip
+```
+install BeautifulSoup
+```
+pip install beautifulsoup
+```
 run program (python main.py)
