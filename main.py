@@ -20,6 +20,7 @@ print(" \______/                                                                
 print("")
 
 dork = raw_input("(Input Dork!) : ")
+print ("")
 pages_number = []
 pages_number.append(0)
 
@@ -27,7 +28,6 @@ for pgs in range(1, 1000):
 	if pgs % 10 == 0:
 		pages_number.append(pgs)
 
-print ("")
 encoded = urllib.quote(dork)
 
 try:
