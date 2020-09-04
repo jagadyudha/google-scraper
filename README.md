@@ -1,8 +1,8 @@
 # Google Dork [Python]
-This is tools for lazy depeser. in this tools you can use inurl, intext, intitle, site.
+This is tools for scraping google url and others. in this tools you can use inurl, intext, intitle, site.
 
 ## How to use
-Installing pip in linux. if your os is windows, you can search in google bro.
+Installing pip in linux. if your os is windows, you can search in google.
 ```
 sudo apt-get install pip
 ```
