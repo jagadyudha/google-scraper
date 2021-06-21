@@ -1,4 +1,4 @@
-# Google Dork [Python]
+# Google scraper [Python]
 This is tools for scraping google to get url and others. you can use inurl, intext, intitle, site.
 
 ## Tutorial
