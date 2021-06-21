@@ -1,23 +1,21 @@
 # Google Dork [Python]
-This is tools for scraping google url and others. in this tools you can use inurl, intext, intitle, site.
+This is tools for scraping google to get url and others. you can use inurl, intext, intitle, site.
 
-## How to use
-Installing pip in linux. if your os is windows, you can search in google.
+## Tutorial
+Installing pip in linux. if your operation system is windows, you can search in google how to install pip.
 ```
 sudo apt-get install pip
 ```
-install BeautifulSoup
+installing BeautifulSoup
 ```
 pip install beautifulsoup
+```
+Installing http request
+```
+pip install requests
 ```
 Run program
 ```
 python main.py
 ```
-## Important
-You can change how many pages you grab. 1 page = 10
-```
-#this is 100 pages
-for pgs in range(1, 1000):
-```
-Result is in output.txt
+
