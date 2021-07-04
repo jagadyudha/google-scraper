@@ -1,21 +1,40 @@
-# Google scraper [Python]
-This is tools for scraping google to get url and others. you can use inurl, intext, intitle, site.
+# Google Scrap [Python3]
 
-## Tutorial
-Installing pip in linux. if your operation system is windows, you can search in google how to install pip.
+Google scraper is a specialized tool designed to quickly extract data from a google page.
+
+## Quick Start
+
+It is recommended to install python3, pip3, beautifulsoup4, and requests.
+
+```bash
+sudo apt-get install python3
 ```
-sudo apt-get install pip
+
+```bash
+sudo apt-get install python3-pip
 ```
-installing BeautifulSoup
+
+```bash
+pip install beautifulsoup4
 ```
-pip install beautifulsoup
-```
-Installing http request
-```
+
+```bash
 pip install requests
 ```
-Run program
-```
-python main.py
+
+## Usage
+
+```bash
+# python3 main.py
+
+input data : intext:learn python programming filetype:pdf
+input pages : 5
 ```
 
+- `Input data` is the data you want to find.
+- `intext` is keyword to find pages containing a certain word in the content.
+- `filetype`is keywoard for restrict results to filetype like PDF, DOCX, etc.
+
+## Contributing
+
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
