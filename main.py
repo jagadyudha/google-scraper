@@ -2,10 +2,7 @@ from bs4 import BeautifulSoup
 import urllib
 import requests
 
-headers = {
-    'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36'}
 pages_data = [0]
-
 
 def get_pages(pages):
     pages_str = pages+"0"
@@ -16,6 +13,8 @@ def get_pages(pages):
 
 
 def get_dork(dork):
+    headers = {
+    'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36 OPR/58.0.3135.79'}
     print("\n\n")
     for i in pages_data:
         dork_page = str(i)
