@@ -1,39 +1,51 @@
-# Google Scrap [Python3]
+# Google Scraper
 
 Google scraper is a specialized tool designed to quickly extract data from a google page.
 
-## Quick Start
+## Getting Started
 
-It is recommended to install python3, pip3, beautifulsoup4, and requests.
-
-```bash
-sudo apt-get install python3
-```
+Clone this repository by executing the following command :
 
 ```bash
-sudo apt-get install python3-pip
+https://github.com/jagadyudha/google-scraper
 ```
+
+Install the libraries that are required :
 
 ```bash
-pip install beautifulsoup4
+# Python 3
+$ pip3 install -r requirements.txt
+
+# or
+
+# Python 2
+$ pip2 install -r requirements.txt
 ```
+
+Run the Project :
 
 ```bash
-pip install requests
+$ python3 main.py
+
+# or
+
+$ python2 main.py
 ```
 
-## Usage
+![image](https://user-images.githubusercontent.com/41937681/163714245-5e9c1d54-cffc-438c-a02f-0ded20f1a58e.png)
 
-```bash
-# python3 main.py
+- `Input Pages` is the number of pages that you want to scrap.
+- `Input Data` is the data you want to find.
 
-input data : intext:learn python programming filetype:pdf
-input pages : 5
-```
+## Basic Google Dork
 
-- `Input data` is the data you want to find.
-- `intext` is keyword to find pages containing a certain word in the content.
-- `filetype`is keywoard for restrict results to filetype like PDF, DOCX, etc.
+| Name      | Description                                          |
+| --------- | ---------------------------------------------------- |
+| site:     | find specific sites like jagad.dev.                  |
+| intext:   | find pages containing a certain word in the content. |
+| filetype: | find certain file types such as PDF and DOCX.        |
+| intitle:  | find a website by title.                             |
+| inurl:    | find the URL of a website based on its keywords.     |
 
 ## Contributing
 
